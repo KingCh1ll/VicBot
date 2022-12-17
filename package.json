@@ -1,0 +1,31 @@
+{
+  "name": "vic.bot",
+  "version": "4.0.0",
+  "description": "...",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && cd dist && node index",
+    "tsc": "tsc",
+    "postinstall": "tsc",
+    "build": "tsc --build",
+    "watch": "tsc --watch",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "author": "KingCh1ll",
+  "dependencies": {
+    "@types/figlet": "^1.5.4",
+    "@types/node": "^18.0.3",
+    "@types/express": "^4.17.15",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.5.0",
+    "dotenv": "^16.0.1",
+    "erela.js": "^2.3.3",
+    "erela.js-spotify": "^1.2.0",
+    "express": "^4.18.1",
+    "figlet": "^1.5.2",
+    "genius-lyrics": "^4.3.8",
+    "typescript": "^4.7.4"
+  }
+}

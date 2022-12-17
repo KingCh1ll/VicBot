@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/Events/raw.ts"],
+  "sourcesContent": ["export default {\n  once: true,\n  async execute(bot: any, event: any) {\n    bot.music.updateVoiceState(event)\n  }\n};"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAA,IAAO,cAAQ;AAAA,EACb,MAAM;AAAA,QACA,QAAQ,KAAU,OAAY;AAClC,QAAI,MAAM,iBAAiB;AAAA;AAAA;",
+  "names": []
+}

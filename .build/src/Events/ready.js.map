@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/Events/ready.ts"],
+  "sourcesContent": ["import Discord, { Client, Colors, ActivityType } from \"discord.js\";\n\nimport client from \"../index\";\nimport logger from \"../Utils/logger\";\n\nexport default {\n  once: true,\n  async execute(client: Client) {\n    client.user?.setPresence({\n\t\t\tstatus: \"online\",\n\t\t\tactivities: [{\n\t\t\t\tname: `VicInTheGame`,\n\t\t\t\ttype: ActivityType.Watching,\n\t\t\t}]\n\t\t});\n\n    (client as any).music.init(client.user.id);\n\n\t\tlogger(\"App\", `Connected to Discord as ${client.user.tag}.`);\n  }\n};"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,qBAAsD;AAGtD,oBAAmB;AAEnB,IAAO,gBAAQ;AAAA,EACb,MAAM;AAAA,QACA,QAAQ,SAAgB;AAPhC;AAQI,kBAAO,SAAP,mBAAa,YAAY;AAAA,MAC1B,QAAQ;AAAA,MACR,YAAY,CAAC;AAAA,QACZ,MAAM;AAAA,QACN,MAAM,4BAAa;AAAA;AAAA;AAInB,IAAC,QAAe,MAAM,KAAK,QAAO,KAAK;AAEzC,+BAAO,OAAO,2BAA2B,QAAO,KAAK;AAAA;AAAA;",
+  "names": []
+}
