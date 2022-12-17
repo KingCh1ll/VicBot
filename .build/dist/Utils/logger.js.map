@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/Utils/logger.ts"],
-  "sourcesContent": [null],
-  "mappings": ";;;;;AAAA,MAAA,UAAA,gBAAA,QAAA;AAEA,QAAA,UAAe,OAAO,MAAc,SAAiB,UAAuB;AAC3E,MAAI,CAAC,WAAW,CAAC;AAAM;AAEvB,QAAM,YAAiB,QAAA,QAAM,SAAS;AACtC,QAAM,eAAoB,QAAA,QAAM,SAAS;AAEzC,UAAQ,IAAI,IAAI,UAAU,UAAU,aAAa;;",
-  "names": []
-}

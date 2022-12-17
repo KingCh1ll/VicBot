@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/index.ts"],
-  "sourcesContent": ["// KingCh1ll //\n// 10/24/2022 //\n\nimport express from \"express\";\n\nimport logger from \"./Utils/logger\";\n\nexport default new Promise((resolve, reject) => {\n\tlet num: number = 0;\n\tconst loader: NodeJS.Timer = setInterval(() => { process.stdout.write(`\\r${[\"\\\\\", \"|\", \"/\", \"-\"][num++]} [App] Loading...`); num %= 4; }, 250);\n\tsetTimeout(() => { clearInterval(loader); resolve(process.stdout.write(`\\r- [App] Loading...`)); }, 5000);\n}).then(() => {\n  console.clear();\n  require(\"./app\");\n\n  const app = express();\n  app.get(\"/\", (req: any, res: any) => res.status(200).send({ status: 200, message: \"Bot is online and ready.\" }));\n  app.listen(process.env.PORT, () => logger(\"App\", \"Listening to port 3000.\"));\n});\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAGA,qBAAoB;AAEpB,oBAAmB;AAEnB,IAAO,cAAQ,IAAI,QAAQ,CAAC,SAAS,WAAW;AAC/C,MAAI,MAAc;AAClB,QAAM,SAAuB,YAAY,MAAM;AAAE,YAAQ,OAAO,MAAM,KAAK,CAAC,MAAM,KAAK,KAAK,KAAK;AAA4B,WAAO;AAAA,KAAM;AAC1I,aAAW,MAAM;AAAE,kBAAc;AAAS,YAAQ,QAAQ,OAAO,MAAM;AAAA,KAA6B;AAAA,GAClG,KAAK,MAAM;AACZ,UAAQ;AACR,UAAQ;AAER,QAAM,MAAM;AACZ,MAAI,IAAI,KAAK,CAAC,KAAU,QAAa,IAAI,OAAO,KAAK,KAAK,EAAE,QAAQ,KAAK,SAAS;AAClF,MAAI,OAAO,QAAQ,IAAI,MAAM,MAAM,2BAAO,OAAO;AAAA;",
-  "names": []
-}

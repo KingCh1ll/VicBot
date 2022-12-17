@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/Events/raw.ts"],
-  "sourcesContent": [null],
-  "mappings": ";;AAAA,QAAA,UAAe;EACb,MAAM;QACA,QAAQ,KAAU,OAAU;AAChC,QAAI,MAAM,iBAAiB;;;",
-  "names": []
-}

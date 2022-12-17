@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/Events/interactionCreate.ts"],
-  "sourcesContent": ["import Discord, { Colors, InteractionType } from \"discord.js\";\r\n\r\nconst cooldowns: any[] = [];\r\n\r\nexport default {\r\n\tonce: false,\r\n\tasync execute(bot: any, interaction: any) {\r\n\t\tif (interaction.type === InteractionType.ApplicationCommand) {\r\n\t\t\tconst command = bot.commands.get(interaction.commandName);\r\n\t\t\tif (!command) return;\r\n\r\n\t\t\tawait interaction.deferReply({\r\n\t\t\t\tephemeral: command.settings.ephemeral || false\r\n\t\t\t});\n\r\n\t\t\ttry {\r\n\t\t\t\tawait command.run(bot, interaction, { options: interaction.options });\r\n\t\t\t} catch (error: any) {\r\n\t\t\t\tbot.logger(\"Error\", error, \"red\");\r\n\r\n\t\t\t\tawait interaction.followUp({\r\n\t\t\t\t\tcontent: `Uh oh! You encountered an ultra rare error. Please join our discord server, create a new forum post, and send the following error.\\n\\`\\`\\`${error.message}\\`\\`\\``,\r\n\t\t\t\t\tephemeral: true\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n};\r\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,qBAAiD;AAEjD,MAAM,YAAmB;AAEzB,IAAO,4BAAQ;AAAA,EACd,MAAM;AAAA,QACA,QAAQ,KAAU,aAAkB;AACzC,QAAI,YAAY,SAAS,+BAAgB,oBAAoB;AAC5D,YAAM,UAAU,IAAI,SAAS,IAAI,YAAY;AAC7C,UAAI,CAAC;AAAS;AAEd,YAAM,YAAY,WAAW;AAAA,QAC5B,WAAW,QAAQ,SAAS,aAAa;AAAA;AAG1C,UAAI;AACH,cAAM,QAAQ,IAAI,KAAK,aAAa,EAAE,SAAS,YAAY;AAAA,eACnD,OAAP;AACD,YAAI,OAAO,SAAS,OAAO;AAE3B,cAAM,YAAY,SAAS;AAAA,UAC1B,SAAS;AAAA,QAA6I,MAAM;AAAA,UAC5J,WAAW;AAAA;AAAA;AAAA;AAAA;AAAA;",
-  "names": []
-}

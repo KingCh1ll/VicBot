@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/Events/ready.ts"],
-  "sourcesContent": [null],
-  "mappings": ";;;;;AAAA,MAAA,eAAA,QAAA;AAGA,MAAA,WAAA,gBAAA,QAAA;AAEA,QAAA,UAAe;EACb,MAAM;QACA,QAAQ,QAAc;;AAC1B,iBAAO,SAAP,mBAAa,YAAY;MAC1B,QAAQ;MACR,YAAY,CAAC;QACZ,MAAM;QACN,MAAM,aAAA,aAAa;;;AAIlB,WAAe,MAAM,KAAK,OAAO,KAAK;AAEzC,IAAA,IAAA,SAAA,SAAO,OAAO,2BAA2B,OAAO,KAAK;;;",
-  "names": []
-}

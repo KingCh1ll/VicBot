@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/Utils/logger.ts"],
-  "sourcesContent": ["import chalk, { Chalk } from \"chalk\";\n\nexport default async (type: string, content: string, color?: keyof Chalk) => {\n\tif (!content || !type) return;\n\n\tconst typeColor: any = chalk[color ?? \"grey\"];\n\tconst contentColor: any = chalk[color ?? \"white\"]\n\n\tconsole.log(`[${typeColor(type)}] ${contentColor(content)}`)\n};\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,mBAA6B;AAE7B,IAAO,iBAAQ,OAAO,MAAc,SAAiB,UAAwB;AAC5E,MAAI,CAAC,WAAW,CAAC;AAAM;AAEvB,QAAM,YAAiB,qBAAM,SAAS;AACtC,QAAM,eAAoB,qBAAM,SAAS;AAEzC,UAAQ,IAAI,IAAI,UAAU,UAAU,aAAa;AAAA;",
-  "names": []
-}
