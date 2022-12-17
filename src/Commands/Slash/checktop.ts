@@ -3,7 +3,7 @@ import Discord, { Role, Colors, ButtonInteraction } from "discord.js";
 import cmd from "../../Structures/command";
 
 let cache: any[] = [];
-setInterval(() => cache = [], 60 * 1000);
+setInterval(() => cache = [], 120 * 1000);
 
 let OGRole: any;
 let TopOGRole: any;
