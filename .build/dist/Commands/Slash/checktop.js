@@ -9,17 +9,12 @@ setInterval(() => cache = [], 60 * 1e3);
 let OGRole;
 let TopOGRole;
 async function execute(bot, message, data) {
-  console.log("test", cache.find((c) => {
-    var _a;
-    return (_a = c == null ? void 0 : c.user) == null ? void 0 : _a.id;
-  }));
   let members = cache.find((c) => {
     var _a;
     return (_a = c == null ? void 0 : c.user) == null ? void 0 : _a.id;
   }) ? cache : await message.guild.members.fetch();
   cache = members;
   members = members.sort((a, b) => a.joinedTimestamp - b.joinedTimestamp).toJSON();
-  console.log("test2");
   const position = new Promise((ful) => {
     for (let i = 1; i < members.length + 1; i++) {
       if (members[i - 1].id === message.user.id)

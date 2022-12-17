@@ -26,7 +26,7 @@ __export(exports, {
 });
 var import_command = __toModule(require("../../Structures/command"));
 let cache = [];
-setInterval(() => cache = [], 60 * 1e3);
+setInterval(() => cache = [], 120 * 1e3);
 let OGRole;
 let TopOGRole;
 async function execute(bot, message, data) {
